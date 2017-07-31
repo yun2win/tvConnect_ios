@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ios/!svn/ver/3475/trunk/yun2win/yun2win/yun2win/Class/Meeting/Other/lib/Scan
+END
+ScanDataProcess.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ios/!svn/ver/2856/trunk/yun2win/yun2win/yun2win/Class/Meeting/Other/lib/Scan/ScanDataProcess.h
+END
+ScanDataProcess.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ios/!svn/ver/3475/trunk/yun2win/yun2win/yun2win/Class/Meeting/Other/lib/Scan/ScanDataProcess.m
+END
+ScanQRcode.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ios/!svn/ver/2965/trunk/yun2win/yun2win/yun2win/Class/Meeting/Other/lib/Scan/ScanQRcode.h
+END
+ScanQRcode.m
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ios/!svn/ver/3291/trunk/yun2win/yun2win/yun2win/Class/Meeting/Other/lib/Scan/ScanQRcode.m
+END

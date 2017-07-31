@@ -1,0 +1,22 @@
+//
+//  ScanDataProcess.h
+//  yun2win
+//
+//  Created by duanhl on 17/2/24.
+//  Copyright © 2017年 yun2win. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+typedef NS_ENUM(NSInteger, ScanDataProcessType) {
+    ScanDataProcessTypeTv,            //tv
+    ScanDataProcessTypeGroup          //群组
+};
+
+
+@interface ScanDataProcess : NSObject
+
+//扫描后的数据处理
++ (void)scanDataProcess:(NSString *)str success:(void (^)(id data, ScanDataProcessType type))success failure:(void (^)(NSError *error))failure;
+
+@end

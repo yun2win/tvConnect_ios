@@ -1,0 +1,169 @@
+//
+//  ScanDataProcess.m
+//  yun2win
+//
+//  Created by duanhl on 17/2/24.
+//  Copyright © 2017年 yun2win. All rights reserved.
+//
+
+#import "ScanDataProcess.h"
+#import "MyTVModel.h"
+
+@implementation ScanDataProcess
+
+//扫描后的数据处理
++ (void)scanDataProcess:(NSString *)str success:(void (^)(id data, ScanDataProcessType type))success failure:(void (^)(NSError *error))failure {
+    
+    if ([str hasPrefix:@"http://"] || [str hasPrefix:@"https://"]) {
+        NSDictionary *dic = [ScanDataProcess getKeyTokenWithUrl:str];
+        if (!dic) {
+            if (failure) {
+                failure(nil);
+            }
+            return;
+        }
+        ScanDataProcessType type = [[dic objectForKey:@"type"] intValue];
+        switch (type) {
+            case ScanDataProcessTypeTv:
+            {
+                [umengEvent clickEvent:kResult_scan_tv];
+                NSString *Id = [dic objectForKey:@"key"];
+                NSString *state = [dic objectForKey:@"state"];
+                NSDictionary *tvDic = @{@"ID" : Id, @"state" : state};
+                [ScanDataProcess addTvDic:tvDic success:success failure:failure];
+                break;
+            }
+            case ScanDataProcessTypeGroup:
+            {
+                NSString *key = [dic objectForKey:@"key"];
+                [ScanDataProcess scanGroupDataProcessKey:key success:success failure:failure];
+
+                break;
+            }
+            default:
+                break;
+        }
+    } else {
+        [ScanDataProcess scanTvDataProcess:str success:success failure:failure];
+    }
+}
+
+
++ (void)addTvDic:(NSDictionary *)dict success:(void (^)(id data, ScanDataProcessType type))success failure:(void (^)(NSError *error))failure{
+    if (!dict) {
+        if (failure) {
+            failure(nil);
+        }
+        return;
+    }
+    NSString *tvId = [dict objectForKey:@"ID"];
+    if (!tvId || tvId.length <= 0) {
+        if (failure) {
+            failure(nil);
+        }
+        return;
+    }
+    [[Y2WUsers getInstance].currentUser.contacts.remote sync:^{
+        Y2WContact *contact = [[Y2WUsers getInstance].currentUser.contacts getHideContactWithUID:tvId];
+        if (contact) {
+            if (success) {
+                success(contact, ScanDataProcessTypeTv);
+            }
+        }else{
+            //创建tv model
+            MyTVModel *model = [[MyTVModel alloc] init];
+            model.ID = [dict objectForKey:@"ID"];
+            model.brand = [self setupObj:[dict objectForKey:@"brand"] defaultObj:@"TV"];
+            model.connector = [self setupObj:[dict objectForKey:@"connector"] defaultObj:@""];
+            model.model = [self setupObj:[dict objectForKey:@"model"] defaultObj:@"unknown"];
+            model.state = [dict objectForKey:@"state"];
+            
+            //创建联系人
+            Y2WContact *newContact = [[Y2WContact alloc] init];
+            newContact.userId = model.ID;
+            newContact.extend = @{@"type":@"device"};
+            newContact.contacts = [Y2WUsers getInstance].getCurrentUser.contacts;
+            //添加联系人
+            [[Y2WUsers getInstance].currentUser.sessions.user.contacts.remote addContact:newContact success:^{
+                
+                NSDictionary *dic =@{@"type":@"device",
+                                     @"b":model.brand,
+                                     @"c":model.model};
+                NSString *jsonStr = [dic toJsonString];
+                
+                [[Y2WUsers getInstance].currentUser.sessions.remote getSessionWithTargetId:model.ID type:@"p2p" extend:jsonStr success:^(Y2WSession *session) {
+                    
+                    if (success) {
+                        success(newContact, ScanDataProcessTypeTv);
+                    }
+                } failure:failure];
+            } failure:failure];
+        }
+    }];
+}
+
++ (void)scanTvDataProcess:(NSString *)str success:(void (^)(id data, ScanDataProcessType type))success failure:(void (^)(NSError *error))failure {
+    if (str.length <= 0 || str == nil) {
+        if (failure) {
+            failure(nil);
+        }
+        return;
+    }
+    
+    NSData *resData = [[NSData alloc] initWithData:[str dataUsingEncoding:NSUTF8StringEncoding]];
+    NSError *error = nil;
+    NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:resData options:0 error:&error];
+    [ScanDataProcess addTvDic:dict success:success failure:failure];
+}
+
+
++ (void)scanGroupDataProcessKey:(NSString *)key success:(void (^)(id data, ScanDataProcessType type))success failure:(void (^)(NSError *error))failure {
+    if (!key || key.length <= 0) {
+        if (failure) {
+            failure(nil);
+        }
+        return;
+    }
+    
+    [RequestManager enterKey:key completion:^(NSDictionary *data) {
+        if (success) {
+            success([data objectForKey:@"sessionId"], ScanDataProcessTypeGroup);
+        }
+    } failure:failure];
+}
+
++ (NSDictionary *)getKeyTokenWithUrl:(NSString *)url {
+    NSArray *groupRules = @[@"(?<=im/join/)([^/]*)",@"(?<=imeeting/join/)([^/]*)",@"(?<=im/door/)([^/]*)",@"(?<=imeeting/door/)([^/]*)"];
+    for (NSString *rule in groupRules) {
+        NSString *key = [self analysisRegex:rule urlStr:url];
+        if (key.length) {
+            return @{@"key" : [ScanDataProcess setupObj:key defaultObj:@""], @"type" : @(ScanDataProcessTypeGroup)};
+        }
+    }
+    
+    NSString *tvRule = @"(?<=#/tv/)([^/]*)";
+    NSString *tvKey = [self analysisRegex:tvRule urlStr:url];
+    NSString *stateRule = [NSString stringWithFormat:@"(?<=#/tv/%@/)([^/]*)",tvKey];
+    NSString *state = [self analysisRegex:stateRule urlStr:url];
+    if (tvKey.length) {
+        return @{@"key" : [ScanDataProcess setupObj:tvKey defaultObj:@""], @"state" : [ScanDataProcess setupObj:state defaultObj:@""], @"type" : @(ScanDataProcessTypeTv)};
+    }
+
+    return nil;
+}
+
++ (NSString *)analysisRegex:(NSString *)regexStr urlStr:(NSString *)urlStr {
+    NSError *error;
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexStr options:NSRegularExpressionCaseInsensitive error:&error];
+    NSArray *matches = [regex matchesInString:urlStr options:0 range:NSMakeRange(0, [urlStr length])];
+    for (NSTextCheckingResult *match in matches) {
+        return [urlStr substringWithRange:match.range];
+    }
+    return nil;
+}
+
++ (id)setupObj:(id)obj1 defaultObj:(id)obj2 {
+    return obj1 ? obj1 : obj2;
+}
+
+@end

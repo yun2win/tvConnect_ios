@@ -528,6 +528,7 @@
 					"$(PROJECT_DIR)/Y2W_SDK_test/frameworks",
 				);
 				INFOPLIST_FILE = Y2W_SDK_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liyueyun.Y2W-test-SDK.Y2W-SDK-test";
@@ -546,6 +547,7 @@
 					"$(PROJECT_DIR)/Y2W_SDK_test/frameworks",
 				);
 				INFOPLIST_FILE = Y2W_SDK_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liyueyun.Y2W-test-SDK.Y2W-SDK-test";

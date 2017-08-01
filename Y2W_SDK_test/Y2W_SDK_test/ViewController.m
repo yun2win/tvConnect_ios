@@ -41,10 +41,13 @@
 }
 
 - (IBAction)defaultPDFUIAction:(UIButton *)sender {
-//    pdf画廊
-    NSURL *pdfUrl = [NSURL URLWithString:@"https://developer.apple.com/softwarelicensing/agreements/pdf/image_units_logo_lic_host.pdf"];
-    Y2WPDFBrowserViewController *pdfVc = [[Y2WPDFBrowserViewController alloc] initWithPDFUrl:pdfUrl curIndex:0];
-    [self presentViewController:pdfVc animated:YES completion:nil];
+    AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    if (app.isConnetcion) {
+        //pdf画廊
+        NSURL *pdfUrl = [NSURL URLWithString:@"https://developer.apple.com/softwarelicensing/agreements/pdf/image_units_logo_lic_host.pdf"];
+        Y2WPDFBrowserViewController *pdfVc = [[Y2WPDFBrowserViewController alloc] initWithPDFUrl:pdfUrl curIndex:0];
+        [self presentViewController:pdfVc animated:YES completion:nil];
+    }
 }
 
 

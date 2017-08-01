@@ -37,11 +37,9 @@
     AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     self.connetcion = app.connetcion;
     
-    if (app.isConnetcion) {
-        NSArray *tvArray = [self.connetcion getAllTvList];
-        [self.tvArray addObjectsFromArray:[tvArray copy]];
-        [self.tableView reloadData];
-    }
+    NSArray *tvArray = [self.connetcion getAllTvList];
+    [self.tvArray addObjectsFromArray:[tvArray copy]];
+    [self.tableView reloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -65,14 +63,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Y2WTVModel *model = self.tvArray[indexPath.row];
     
-    NSMutableArray *array = [NSMutableArray arrayWithCapacity:0];
-    for (int i = 0; i < 3; i++) {
-        NSString *urlStr = @"http://imgsrc.baidu.com/imgad/pic/item/b03533fa828ba61e5e6d4c0d4b34970a304e5915.jpg";
-        NSURL *url = [NSURL URLWithString:urlStr];
-        [array addObject:url];
+    AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    if (app.isConnetcion) {
+        NSMutableArray *array = [NSMutableArray arrayWithCapacity:0];
+        for (int i = 0; i < 3; i++) {
+            NSString *urlStr = @"http://imgsrc.baidu.com/imgad/pic/item/b03533fa828ba61e5e6d4c0d4b34970a304e5915.jpg";
+            NSURL *url = [NSURL URLWithString:urlStr];
+            [array addObject:url];
+        }
+        
+        [self.connetcion tvPlayImageUrls:[array copy] tvId:model.ID];
     }
-    
-    [self.connetcion tvPlayImageUrls:[array copy] tvId:model.ID];
 }
 
 - (IBAction)back:(UIButton *)sender {

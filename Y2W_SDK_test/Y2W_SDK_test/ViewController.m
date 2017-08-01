@@ -24,7 +24,8 @@
 }
 
 #pragma mark 按钮点击事件
-- (IBAction)defaultUIAction:(UIButton *)sender {
+- (IBAction)defaultImageUIAction:(UIButton *)sender {
+    //图片画廊
     AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     if (app.isConnetcion) {
         NSMutableArray *array = [NSMutableArray arrayWithCapacity:0];
@@ -38,6 +39,14 @@
         [self presentViewController:imageVc animated:YES completion:nil];
     }
 }
+
+- (IBAction)defaultPDFUIAction:(UIButton *)sender {
+//    pdf画廊
+    NSURL *pdfUrl = [NSURL URLWithString:@"https://developer.apple.com/softwarelicensing/agreements/pdf/image_units_logo_lic_host.pdf"];
+    Y2WPDFBrowserViewController *pdfVc = [[Y2WPDFBrowserViewController alloc] initWithPDFUrl:pdfUrl curIndex:0];
+    [self presentViewController:pdfVc animated:YES completion:nil];
+}
+
 
 - (IBAction)customizeUIAction:(UIButton *)sender {
     CustomizeViewController *customizeVc = [[CustomizeViewController alloc] init];

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,39 +25,51 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl3-DL-3El">
                                 <rect key="frame" x="61" y="90" width="199" height="53"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="FBb-ZL-zTp"/>
-                                    <constraint firstAttribute="width" constant="199" id="FNH-AC-Dfm"/>
+                                    <constraint firstAttribute="height" constant="53" id="7th-hy-xMx"/>
                                 </constraints>
-                                <state key="normal" title="使用SDK自带UI"/>
+                                <state key="normal" title="使用SDK自带图片 UI"/>
                                 <connections>
-                                    <action selector="defaultUIAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sjt-It-siF"/>
+                                    <action selector="defaultImageUIAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6CQ-kx-SvV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYN-fz-79G">
+                                <rect key="frame" x="61" y="151" width="199" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="0U9-c1-h9U"/>
+                                </constraints>
+                                <state key="normal" title="使用SDK自带PDF UI"/>
+                                <connections>
+                                    <action selector="defaultPDFUIAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJC-GE-HSq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ry-Qf-fv0">
-                                <rect key="frame" x="61" y="183" width="199" height="53"/>
+                                <rect key="frame" x="61" y="231" width="199" height="53"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="199" id="85u-ag-dE3"/>
-                                    <constraint firstAttribute="height" constant="53" id="wzB-PD-53A"/>
+                                    <constraint firstAttribute="height" constant="53" id="ocX-ey-JJq"/>
                                 </constraints>
-                                <state key="normal" title="使用自定义UI"/>
+                                <state key="normal" title="使用自定义 UI"/>
                                 <connections>
                                     <action selector="customizeUIAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b12-GR-fYg"/>
-                                    <action selector="defaultUIAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jcE-WI-zqP"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8Ry-Qf-fv0" firstAttribute="top" secondItem="fl3-DL-3El" secondAttribute="bottom" constant="40" id="0Sq-aJ-qmn"/>
-                            <constraint firstItem="fl3-DL-3El" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gbd-DU-qXj"/>
-                            <constraint firstItem="fl3-DL-3El" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="KOC-D8-1Mn"/>
-                            <constraint firstItem="8Ry-Qf-fv0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gwZ-fm-zub"/>
+                            <constraint firstItem="GYN-fz-79G" firstAttribute="top" secondItem="fl3-DL-3El" secondAttribute="bottom" constant="8" id="419-Mw-5Ib"/>
+                            <constraint firstItem="GYN-fz-79G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="DRK-5o-8Ae"/>
+                            <constraint firstItem="8Ry-Qf-fv0" firstAttribute="top" secondItem="GYN-fz-79G" secondAttribute="bottom" constant="27" id="MJQ-5i-yV6"/>
+                            <constraint firstItem="fl3-DL-3El" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="WVV-Jg-Gsk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Ry-Qf-fv0" secondAttribute="trailing" constant="44" id="WxT-ki-vYC"/>
+                            <constraint firstItem="fl3-DL-3El" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="hFi-5R-Smv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fl3-DL-3El" secondAttribute="trailing" constant="44" id="i6r-VR-GBH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GYN-fz-79G" secondAttribute="trailing" constant="44" id="m5Y-yf-EZW"/>
+                            <constraint firstItem="8Ry-Qf-fv0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="uFX-8c-N30"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.75" y="138.38028169014083"/>
+            <point key="canvasLocation" x="-473" y="120"/>
         </scene>
     </scenes>
 </document>

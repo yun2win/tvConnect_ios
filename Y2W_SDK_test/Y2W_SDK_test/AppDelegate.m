@@ -16,7 +16,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //连接IM
+    Y2WConnetcion *connetcion = [[Y2WConnetcion alloc] initWithAppkey:@"pcDeF3PT63XYAlvm" appSecret:@"CsFJameMf3eQUCzT4ERbOzCh" uid:@"108" userName:@"测试1" userAvatarUrl:@"" result:^(NSError *error) {
+        if (!error) {
+            self.isConnetcion = YES;
+        }
+    }];
+    self.connetcion = connetcion;
+    
     return YES;
 }
 

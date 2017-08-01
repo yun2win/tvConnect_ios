@@ -9,6 +9,7 @@
 #import "CustomizeViewController.h"
 #import <Y2W_ConnetcionTV_SDK/Y2W_ConnetcionTV_SDK.h>
 #import "ScanQRcode.h"
+#import "AppDelegate.h"
 
 @interface CustomizeViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -25,7 +26,7 @@
     if (_tvArray == nil) {
         _tvArray = [NSMutableArray arrayWithCapacity:0];
     }
-
+    
     return _tvArray;
 }
 
@@ -33,20 +34,15 @@
     [super viewDidLoad];
     
     self.tableView.tableFooterView = [[UIView alloc] init];
+    AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    self.connetcion = app.connetcion;
+    
+    if (app.isConnetcion) {
+        NSArray *tvArray = [self.connetcion getAllTvList];
+        [self.tvArray addObjectsFromArray:[tvArray copy]];
+        [self.tableView reloadData];
+    }
 }
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    //连接IM
-    self.connetcion = [[Y2WConnetcion alloc] initWithAppkey:@"pcDeF3PT63XYAlvm" appSecret:@"CsFJameMf3eQUCzT4ERbOzCh" uid:@"108" userName:@"测试1" userAvatarUrl:@"" result:^(NSError *error) {
-        if (!error) {
-            [self.tvArray removeAllObjects];
-            NSArray *tvArray = [self.connetcion getAllTvList];
-            [self.tvArray addObjectsFromArray:[tvArray copy]];
-        }
-    }];
-}
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     

@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Y2W_ConnetcionTV_SDK/Y2W_ConnetcionTV_SDK.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic, strong) Y2WConnetcion      *connetcion;
+@property (nonatomic, assign) BOOL                isConnetcion;     //是否连接成功
 
 @end
 

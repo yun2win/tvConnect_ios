@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Y2W_SDK_test.xcscheme</key>
+		<key>TvConnect_SDK_iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F4C4A2411F2B42CB00E61F5D</key>
+		<key>F42996BA1F31CEF400FB3D24</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4C4A25A1F2B42CB00E61F5D</key>
+		<key>F42996D31F31CEF400FB3D24</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4C4A2651F2B42CB00E61F5D</key>
+		<key>F42996DE1F31CEF400FB3D24</key>
 		<dict>
 			<key>primary</key>
 			<true/>

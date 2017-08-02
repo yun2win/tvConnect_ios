@@ -12,7 +12,6 @@
 #import <Y2W_ConnetcionTV_SDK/Y2WPDFBrowserViewController.h>
 #import <Y2W_ConnetcionTV_SDK/Y2WTVModel.h>
 
-//#import "Y2WConnetcion.h"
 
 //! Project version number for Y2W_ConnetcionTV_SDK.
 FOUNDATION_EXPORT double Y2W_ConnetcionTV_SDKVersionNumber;

@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F42996C01F31CEF400FB3D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F42996BF1F31CEF400FB3D24 /* main.m */; };
+		F42996C31F31CEF400FB3D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F42996C21F31CEF400FB3D24 /* AppDelegate.m */; };
+		F42996C61F31CEF400FB3D24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42996C51F31CEF400FB3D24 /* ViewController.m */; };
+		F42996C91F31CEF400FB3D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42996C71F31CEF400FB3D24 /* Main.storyboard */; };
+		F42996CB1F31CEF400FB3D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42996CA1F31CEF400FB3D24 /* Assets.xcassets */; };
+		F42996CE1F31CEF400FB3D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42996CC1F31CEF400FB3D24 /* LaunchScreen.storyboard */; };
+		F42996D91F31CEF400FB3D24 /* TvConnect_SDK_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F42996D81F31CEF400FB3D24 /* TvConnect_SDK_iOSTests.m */; };
+		F42996E41F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F42996E31F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests.m */; };
+		F42997021F31CF4400FB3D24 /* CustomizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42996F21F31CF4400FB3D24 /* CustomizeViewController.m */; };
+		F42997031F31CF4400FB3D24 /* CustomizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42996F31F31CF4400FB3D24 /* CustomizeViewController.xib */; };
+		F42997041F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F51F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework */; };
+		F42997061F31CF4400FB3D24 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996F91F31CF4400FB3D24 /* line@2x.png */; };
+		F42997071F31CF4400FB3D24 /* pick_bg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996FA1F31CF4400FB3D24 /* pick_bg2@2x.png */; };
+		F42997081F31CF4400FB3D24 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996FB1F31CF4400FB3D24 /* pick_bg@2x.png */; };
+		F42997091F31CF4400FB3D24 /* 扫一扫@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996FC1F31CF4400FB3D24 /* 扫一扫@2x.png */; };
+		F429970A1F31CF4400FB3D24 /* 扫一扫@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996FD1F31CF4400FB3D24 /* 扫一扫@3x.png */; };
+		F429970B1F31CF4400FB3D24 /* 返回2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996FE1F31CF4400FB3D24 /* 返回2@2x.png */; };
+		F429970C1F31CF4400FB3D24 /* 返回2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996FF1F31CF4400FB3D24 /* 返回2@3x.png */; };
+		F429970D1F31CF4400FB3D24 /* ScanQRcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F42997011F31CF4400FB3D24 /* ScanQRcode.m */; };
+		F429970F1F31CF6100FB3D24 /* Y2W_ConnetcionTV_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F51F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F42997101F31CF6100FB3D24 /* Y2W_IM_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F61F31CF4400FB3D24 /* Y2W_IM_SDK.framework */; };
+		F42997111F31CF6100FB3D24 /* Y2W_IM_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F61F31CF4400FB3D24 /* Y2W_IM_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F42996D51F31CEF400FB3D24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42996B31F31CEF400FB3D24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42996BA1F31CEF400FB3D24;
+			remoteInfo = TvConnect_SDK_iOS;
+		};
+		F42996E01F31CEF400FB3D24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42996B31F31CEF400FB3D24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F42996BA1F31CEF400FB3D24;
+			remoteInfo = TvConnect_SDK_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F42997121F31CF6200FB3D24 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F42997111F31CF6100FB3D24 /* Y2W_IM_SDK.framework in Embed Frameworks */,
+				F429970F1F31CF6100FB3D24 /* Y2W_ConnetcionTV_SDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F42996BB1F31CEF400FB3D24 /* TvConnect_SDK_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TvConnect_SDK_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42996BF1F31CEF400FB3D24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F42996C11F31CEF400FB3D24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F42996C21F31CEF400FB3D24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F42996C41F31CEF400FB3D24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F42996C51F31CEF400FB3D24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F42996C81F31CEF400FB3D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F42996CA1F31CEF400FB3D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F42996CD1F31CEF400FB3D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F42996CF1F31CEF400FB3D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42996D41F31CEF400FB3D24 /* TvConnect_SDK_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TvConnect_SDK_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42996D81F31CEF400FB3D24 /* TvConnect_SDK_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TvConnect_SDK_iOSTests.m; sourceTree = "<group>"; };
+		F42996DA1F31CEF400FB3D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42996DF1F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TvConnect_SDK_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42996E31F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TvConnect_SDK_iOSUITests.m; sourceTree = "<group>"; };
+		F42996E51F31CEF400FB3D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42996F11F31CF4400FB3D24 /* CustomizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizeViewController.h; sourceTree = "<group>"; };
+		F42996F21F31CF4400FB3D24 /* CustomizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizeViewController.m; sourceTree = "<group>"; };
+		F42996F31F31CF4400FB3D24 /* CustomizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizeViewController.xib; sourceTree = "<group>"; };
+		F42996F51F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Y2W_ConnetcionTV_SDK.framework; sourceTree = "<group>"; };
+		F42996F61F31CF4400FB3D24 /* Y2W_IM_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Y2W_IM_SDK.framework; sourceTree = "<group>"; };
+		F42996F91F31CF4400FB3D24 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		F42996FA1F31CF4400FB3D24 /* pick_bg2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg2@2x.png"; sourceTree = "<group>"; };
+		F42996FB1F31CF4400FB3D24 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
+		F42996FC1F31CF4400FB3D24 /* 扫一扫@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫一扫@2x.png"; sourceTree = "<group>"; };
+		F42996FD1F31CF4400FB3D24 /* 扫一扫@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫一扫@3x.png"; sourceTree = "<group>"; };
+		F42996FE1F31CF4400FB3D24 /* 返回2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回2@2x.png"; sourceTree = "<group>"; };
+		F42996FF1F31CF4400FB3D24 /* 返回2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回2@3x.png"; sourceTree = "<group>"; };
+		F42997001F31CF4400FB3D24 /* ScanQRcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRcode.h; sourceTree = "<group>"; };
+		F42997011F31CF4400FB3D24 /* ScanQRcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRcode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F42996B81F31CEF400FB3D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42997101F31CF6100FB3D24 /* Y2W_IM_SDK.framework in Frameworks */,
+				F42997041F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42996D11F31CEF400FB3D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42996DC1F31CEF400FB3D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F42996B21F31CEF400FB3D24 = {
+			isa = PBXGroup;
+			children = (
+				F42996BD1F31CEF400FB3D24 /* TvConnect_SDK_iOS */,
+				F42996D71F31CEF400FB3D24 /* TvConnect_SDK_iOSTests */,
+				F42996E21F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests */,
+				F42996BC1F31CEF400FB3D24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F42996BC1F31CEF400FB3D24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F42996BB1F31CEF400FB3D24 /* TvConnect_SDK_iOS.app */,
+				F42996D41F31CEF400FB3D24 /* TvConnect_SDK_iOSTests.xctest */,
+				F42996DF1F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F42996BD1F31CEF400FB3D24 /* TvConnect_SDK_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F42996F41F31CF4400FB3D24 /* frameworks */,
+				F42996F71F31CF4400FB3D24 /* Scan */,
+				F42996C11F31CEF400FB3D24 /* AppDelegate.h */,
+				F42996C21F31CEF400FB3D24 /* AppDelegate.m */,
+				F42996C41F31CEF400FB3D24 /* ViewController.h */,
+				F42996C51F31CEF400FB3D24 /* ViewController.m */,
+				F42996C71F31CEF400FB3D24 /* Main.storyboard */,
+				F42996F11F31CF4400FB3D24 /* CustomizeViewController.h */,
+				F42996F21F31CF4400FB3D24 /* CustomizeViewController.m */,
+				F42996F31F31CF4400FB3D24 /* CustomizeViewController.xib */,
+				F42996CA1F31CEF400FB3D24 /* Assets.xcassets */,
+				F42996CC1F31CEF400FB3D24 /* LaunchScreen.storyboard */,
+				F42996CF1F31CEF400FB3D24 /* Info.plist */,
+				F42996BE1F31CEF400FB3D24 /* Supporting Files */,
+			);
+			path = TvConnect_SDK_iOS;
+			sourceTree = "<group>";
+		};
+		F42996BE1F31CEF400FB3D24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F42996BF1F31CEF400FB3D24 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F42996D71F31CEF400FB3D24 /* TvConnect_SDK_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F42996D81F31CEF400FB3D24 /* TvConnect_SDK_iOSTests.m */,
+				F42996DA1F31CEF400FB3D24 /* Info.plist */,
+			);
+			path = TvConnect_SDK_iOSTests;
+			sourceTree = "<group>";
+		};
+		F42996E21F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F42996E31F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests.m */,
+				F42996E51F31CEF400FB3D24 /* Info.plist */,
+			);
+			path = TvConnect_SDK_iOSUITests;
+			sourceTree = "<group>";
+		};
+		F42996F41F31CF4400FB3D24 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F42996F51F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework */,
+				F42996F61F31CF4400FB3D24 /* Y2W_IM_SDK.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+		F42996F71F31CF4400FB3D24 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				F42996F81F31CF4400FB3D24 /* QRcodeImage */,
+				F42997001F31CF4400FB3D24 /* ScanQRcode.h */,
+				F42997011F31CF4400FB3D24 /* ScanQRcode.m */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		F42996F81F31CF4400FB3D24 /* QRcodeImage */ = {
+			isa = PBXGroup;
+			children = (
+				F42996F91F31CF4400FB3D24 /* line@2x.png */,
+				F42996FA1F31CF4400FB3D24 /* pick_bg2@2x.png */,
+				F42996FB1F31CF4400FB3D24 /* pick_bg@2x.png */,
+				F42996FC1F31CF4400FB3D24 /* 扫一扫@2x.png */,
+				F42996FD1F31CF4400FB3D24 /* 扫一扫@3x.png */,
+				F42996FE1F31CF4400FB3D24 /* 返回2@2x.png */,
+				F42996FF1F31CF4400FB3D24 /* 返回2@3x.png */,
+			);
+			path = QRcodeImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F42996BA1F31CEF400FB3D24 /* TvConnect_SDK_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42996E81F31CEF500FB3D24 /* Build configuration list for PBXNativeTarget "TvConnect_SDK_iOS" */;
+			buildPhases = (
+				F42996B71F31CEF400FB3D24 /* Sources */,
+				F42996B81F31CEF400FB3D24 /* Frameworks */,
+				F42996B91F31CEF400FB3D24 /* Resources */,
+				F42997121F31CF6200FB3D24 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TvConnect_SDK_iOS;
+			productName = TvConnect_SDK_iOS;
+			productReference = F42996BB1F31CEF400FB3D24 /* TvConnect_SDK_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F42996D31F31CEF400FB3D24 /* TvConnect_SDK_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42996EB1F31CEF500FB3D24 /* Build configuration list for PBXNativeTarget "TvConnect_SDK_iOSTests" */;
+			buildPhases = (
+				F42996D01F31CEF400FB3D24 /* Sources */,
+				F42996D11F31CEF400FB3D24 /* Frameworks */,
+				F42996D21F31CEF400FB3D24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42996D61F31CEF400FB3D24 /* PBXTargetDependency */,
+			);
+			name = TvConnect_SDK_iOSTests;
+			productName = TvConnect_SDK_iOSTests;
+			productReference = F42996D41F31CEF400FB3D24 /* TvConnect_SDK_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F42996DE1F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42996EE1F31CEF500FB3D24 /* Build configuration list for PBXNativeTarget "TvConnect_SDK_iOSUITests" */;
+			buildPhases = (
+				F42996DB1F31CEF400FB3D24 /* Sources */,
+				F42996DC1F31CEF400FB3D24 /* Frameworks */,
+				F42996DD1F31CEF400FB3D24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F42996E11F31CEF400FB3D24 /* PBXTargetDependency */,
+			);
+			name = TvConnect_SDK_iOSUITests;
+			productName = TvConnect_SDK_iOSUITests;
+			productReference = F42996DF1F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F42996B31F31CEF400FB3D24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = yun2win;
+				TargetAttributes = {
+					F42996BA1F31CEF400FB3D24 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7GY5FVN28H;
+						ProvisioningStyle = Automatic;
+					};
+					F42996D31F31CEF400FB3D24 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7GY5FVN28H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F42996BA1F31CEF400FB3D24;
+					};
+					F42996DE1F31CEF400FB3D24 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7GY5FVN28H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F42996BA1F31CEF400FB3D24;
+					};
+				};
+			};
+			buildConfigurationList = F42996B61F31CEF400FB3D24 /* Build configuration list for PBXProject "TvConnect_SDK_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F42996B21F31CEF400FB3D24;
+			productRefGroup = F42996BC1F31CEF400FB3D24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F42996BA1F31CEF400FB3D24 /* TvConnect_SDK_iOS */,
+				F42996D31F31CEF400FB3D24 /* TvConnect_SDK_iOSTests */,
+				F42996DE1F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F42996B91F31CEF400FB3D24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42997081F31CF4400FB3D24 /* pick_bg@2x.png in Resources */,
+				F42996CE1F31CEF400FB3D24 /* LaunchScreen.storyboard in Resources */,
+				F429970C1F31CF4400FB3D24 /* 返回2@3x.png in Resources */,
+				F42997071F31CF4400FB3D24 /* pick_bg2@2x.png in Resources */,
+				F42997061F31CF4400FB3D24 /* line@2x.png in Resources */,
+				F42996CB1F31CEF400FB3D24 /* Assets.xcassets in Resources */,
+				F429970B1F31CF4400FB3D24 /* 返回2@2x.png in Resources */,
+				F42997091F31CF4400FB3D24 /* 扫一扫@2x.png in Resources */,
+				F429970A1F31CF4400FB3D24 /* 扫一扫@3x.png in Resources */,
+				F42997031F31CF4400FB3D24 /* CustomizeViewController.xib in Resources */,
+				F42996C91F31CEF400FB3D24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42996D21F31CEF400FB3D24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42996DD1F31CEF400FB3D24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F42996B71F31CEF400FB3D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42996C61F31CEF400FB3D24 /* ViewController.m in Sources */,
+				F42996C31F31CEF400FB3D24 /* AppDelegate.m in Sources */,
+				F42997021F31CF4400FB3D24 /* CustomizeViewController.m in Sources */,
+				F429970D1F31CF4400FB3D24 /* ScanQRcode.m in Sources */,
+				F42996C01F31CEF400FB3D24 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42996D01F31CEF400FB3D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42996D91F31CEF400FB3D24 /* TvConnect_SDK_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42996DB1F31CEF400FB3D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42996E41F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F42996D61F31CEF400FB3D24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42996BA1F31CEF400FB3D24 /* TvConnect_SDK_iOS */;
+			targetProxy = F42996D51F31CEF400FB3D24 /* PBXContainerItemProxy */;
+		};
+		F42996E11F31CEF400FB3D24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F42996BA1F31CEF400FB3D24 /* TvConnect_SDK_iOS */;
+			targetProxy = F42996E01F31CEF400FB3D24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F42996C71F31CEF400FB3D24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F42996C81F31CEF400FB3D24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F42996CC1F31CEF400FB3D24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F42996CD1F31CEF400FB3D24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F42996E61F31CEF500FB3D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F42996E71F31CEF500FB3D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F42996E91F31CEF500FB3D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7GY5FVN28H;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TvConnect_SDK_iOS/frameworks",
+				);
+				INFOPLIST_FILE = TvConnect_SDK_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liyueyun.Y2W-test-SDK.Y2W-SDK-test.TvConnect-SDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F42996EA1F31CEF500FB3D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7GY5FVN28H;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TvConnect_SDK_iOS/frameworks",
+				);
+				INFOPLIST_FILE = TvConnect_SDK_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liyueyun.Y2W-test-SDK.Y2W-SDK-test.TvConnect-SDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F42996EC1F31CEF500FB3D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7GY5FVN28H;
+				INFOPLIST_FILE = TvConnect_SDK_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liyueyun.Y2W-test-SDK.Y2W-SDK-test.TvConnect-SDK-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TvConnect_SDK_iOS.app/TvConnect_SDK_iOS";
+			};
+			name = Debug;
+		};
+		F42996ED1F31CEF500FB3D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7GY5FVN28H;
+				INFOPLIST_FILE = TvConnect_SDK_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liyueyun.Y2W-test-SDK.Y2W-SDK-test.TvConnect-SDK-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TvConnect_SDK_iOS.app/TvConnect_SDK_iOS";
+			};
+			name = Release;
+		};
+		F42996EF1F31CEF500FB3D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7GY5FVN28H;
+				INFOPLIST_FILE = TvConnect_SDK_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liyueyun.Y2W-test-SDK.Y2W-SDK-test.TvConnect-SDK-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TvConnect_SDK_iOS;
+			};
+			name = Debug;
+		};
+		F42996F01F31CEF500FB3D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7GY5FVN28H;
+				INFOPLIST_FILE = TvConnect_SDK_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liyueyun.Y2W-test-SDK.Y2W-SDK-test.TvConnect-SDK-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TvConnect_SDK_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F42996B61F31CEF400FB3D24 /* Build configuration list for PBXProject "TvConnect_SDK_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42996E61F31CEF500FB3D24 /* Debug */,
+				F42996E71F31CEF500FB3D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42996E81F31CEF500FB3D24 /* Build configuration list for PBXNativeTarget "TvConnect_SDK_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42996E91F31CEF500FB3D24 /* Debug */,
+				F42996EA1F31CEF500FB3D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F42996EB1F31CEF500FB3D24 /* Build configuration list for PBXNativeTarget "TvConnect_SDK_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42996EC1F31CEF500FB3D24 /* Debug */,
+				F42996ED1F31CEF500FB3D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F42996EE1F31CEF500FB3D24 /* Build configuration list for PBXNativeTarget "TvConnect_SDK_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42996EF1F31CEF500FB3D24 /* Debug */,
+				F42996F01F31CEF500FB3D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F42996B31F31CEF400FB3D24 /* Project object */;
+}

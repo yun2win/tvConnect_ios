@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F4C4A2411F2B42CB00E61F5D"
-               BuildableName = "Y2W_SDK_test.app"
-               BlueprintName = "Y2W_SDK_test"
-               ReferencedContainer = "container:Y2W_SDK_test.xcodeproj">
+               BlueprintIdentifier = "F42996BA1F31CEF400FB3D24"
+               BuildableName = "TvConnect_SDK_iOS.app"
+               BlueprintName = "TvConnect_SDK_iOS"
+               ReferencedContainer = "container:TvConnect_SDK_iOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F4C4A25A1F2B42CB00E61F5D"
-               BuildableName = "Y2W_SDK_testTests.xctest"
-               BlueprintName = "Y2W_SDK_testTests"
-               ReferencedContainer = "container:Y2W_SDK_test.xcodeproj">
+               BlueprintIdentifier = "F42996D31F31CEF400FB3D24"
+               BuildableName = "TvConnect_SDK_iOSTests.xctest"
+               BlueprintName = "TvConnect_SDK_iOSTests"
+               ReferencedContainer = "container:TvConnect_SDK_iOS.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F4C4A2651F2B42CB00E61F5D"
-               BuildableName = "Y2W_SDK_testUITests.xctest"
-               BlueprintName = "Y2W_SDK_testUITests"
-               ReferencedContainer = "container:Y2W_SDK_test.xcodeproj">
+               BlueprintIdentifier = "F42996DE1F31CEF400FB3D24"
+               BuildableName = "TvConnect_SDK_iOSUITests.xctest"
+               BlueprintName = "TvConnect_SDK_iOSUITests"
+               ReferencedContainer = "container:TvConnect_SDK_iOS.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F4C4A2411F2B42CB00E61F5D"
-            BuildableName = "Y2W_SDK_test.app"
-            BlueprintName = "Y2W_SDK_test"
-            ReferencedContainer = "container:Y2W_SDK_test.xcodeproj">
+            BlueprintIdentifier = "F42996BA1F31CEF400FB3D24"
+            BuildableName = "TvConnect_SDK_iOS.app"
+            BlueprintName = "TvConnect_SDK_iOS"
+            ReferencedContainer = "container:TvConnect_SDK_iOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F4C4A2411F2B42CB00E61F5D"
-            BuildableName = "Y2W_SDK_test.app"
-            BlueprintName = "Y2W_SDK_test"
-            ReferencedContainer = "container:Y2W_SDK_test.xcodeproj">
+            BlueprintIdentifier = "F42996BA1F31CEF400FB3D24"
+            BuildableName = "TvConnect_SDK_iOS.app"
+            BlueprintName = "TvConnect_SDK_iOS"
+            ReferencedContainer = "container:TvConnect_SDK_iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F4C4A2411F2B42CB00E61F5D"
-            BuildableName = "Y2W_SDK_test.app"
-            BlueprintName = "Y2W_SDK_test"
-            ReferencedContainer = "container:Y2W_SDK_test.xcodeproj">
+            BlueprintIdentifier = "F42996BA1F31CEF400FB3D24"
+            BuildableName = "TvConnect_SDK_iOS.app"
+            BlueprintName = "TvConnect_SDK_iOS"
+            ReferencedContainer = "container:TvConnect_SDK_iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

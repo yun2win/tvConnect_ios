@@ -1,8 +1,8 @@
 //
 //  main.m
-//  Y2W_SDK_test
+//  TvConnect_SDK_iOS
 //
-//  Created by 段洪亮 on 2017/7/28.
+//  Created by 段洪亮 on 2017/8/2.
 //  Copyright © 2017年 yun2win. All rights reserved.
 //
 

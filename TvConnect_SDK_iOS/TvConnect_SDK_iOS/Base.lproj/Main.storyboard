@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uej-7U-K54">
+                                <rect key="frame" x="61" y="90" width="198" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aRh-Qc-glw"/>
+                                </constraints>
+                                <state key="normal" title="使用SDK自带图片 UI"/>
+                                <connections>
+                                    <action selector="defaultImageUIAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TDd-6O-Qit"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4S4-Kt-N38">
+                                <rect key="frame" x="61" y="150" width="198" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lQH-wc-1EM"/>
+                                </constraints>
+                                <state key="normal" title="使用SDK自带PDF UI"/>
+                                <connections>
+                                    <action selector="defaultPDFUIAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYu-Oj-agF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnB-nd-hmk">
+                                <rect key="frame" x="61" y="210" width="198" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="w3T-lb-dHA"/>
+                                </constraints>
+                                <state key="normal" title="使用自定义 UI"/>
+                                <connections>
+                                    <action selector="customizeUIAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJo-fK-hJz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4S4-Kt-N38" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="7iI-o3-6Hm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uej-7U-K54" secondAttribute="trailing" constant="45" id="FNV-5X-yZK"/>
+                            <constraint firstItem="NnB-nd-hmk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="Jl9-vD-TFc"/>
+                            <constraint firstItem="Uej-7U-K54" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="K8W-db-9Xb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NnB-nd-hmk" secondAttribute="trailing" constant="45" id="KkV-BW-DvZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4S4-Kt-N38" secondAttribute="trailing" constant="45" id="dZC-Fs-2eV"/>
+                            <constraint firstItem="NnB-nd-hmk" firstAttribute="top" secondItem="4S4-Kt-N38" secondAttribute="bottom" constant="20" id="hHb-HG-akp"/>
+                            <constraint firstItem="4S4-Kt-N38" firstAttribute="top" secondItem="Uej-7U-K54" secondAttribute="bottom" constant="20" id="q7X-uX-631"/>
+                            <constraint firstItem="Uej-7U-K54" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="vIA-2T-JuA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="111"/>
+        </scene>
+    </scenes>
+</document>

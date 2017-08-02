@@ -1,18 +1,18 @@
 //
-//  Y2W_SDK_testTests.m
-//  Y2W_SDK_testTests
+//  TvConnect_SDK_iOSTests.m
+//  TvConnect_SDK_iOSTests
 //
-//  Created by 段洪亮 on 2017/7/28.
+//  Created by 段洪亮 on 2017/8/2.
 //  Copyright © 2017年 yun2win. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface Y2W_SDK_testTests : XCTestCase
+@interface TvConnect_SDK_iOSTests : XCTestCase
 
 @end
 
-@implementation Y2W_SDK_testTests
+@implementation TvConnect_SDK_iOSTests
 
 - (void)setUp {
     [super setUp];

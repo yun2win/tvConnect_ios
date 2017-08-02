@@ -32,7 +32,7 @@
 
 
 /**
- *  扫描TV二维码
+ *  扫描电视二维码
  *
  *  @param scanStr          扫描到的原始字符串 
  *  AVMetadataMachineReadableCodeObject *metadataObject = [metadataObjects objectAtIndex:0];
@@ -43,50 +43,50 @@
 - (void)scanQRcodeTvStr:(NSString *)scanStr result:(void (^)(Y2WTVModel *tvModel, NSError *error))result;
 
 /**
- *  获取本地保存的TV (需配合 saveTvModel:方法一起用)
+ *  获取本地保存的电视 (需配合 saveTvModel:方法一起用)
  *
  *  返回 Y2WTVModel的数组
  */
 - (NSArray<Y2WTVModel *> *)getAllTvList;
 
 /**
- *  保存到TV本地
+ *  保存电视到本地
  *
- *  @param tvModel           TV数据模型
+ *  @param tvModel           电视数据模型
  */
 - (void)saveTvModel:(Y2WTVModel *)tvModel;
 
 /**
- *  删除TV
+ *  删除电视
  *
- *  @param tvId             TV的ID
+ *  @param tvId             电视的ID
  */
 - (void)deleteTv:(NSString *)tvId;
 
 /**
- *  TV投屏PDF文件
+ *  PDF文件投屏到电视
  *
  *  @param url              文件的URL
  *  @param position         当前要显示第几页
  *  @param totalPageNum     pdf文档总页数
  *  @param fileName         文件名
- *  @param tvId             TV的ID
+ *  @param tvId             电视的ID
  */
 - (void)tvPlayPDFUrl:(NSURL *)url position:(NSInteger)position totalPageNum:(NSInteger)totalPageNum fileName:(NSString *)fileName tvId:(NSString *)tvId;
 
 /**
- *  TV投屏图片
+ *  图片投屏到电视
  *
- *  @param urls             图片url数组（建议一次传三张），TV默认显示数组的第一张图片，第二和第三张为TV端预加载，以提高TV端图片显示速度
- *  @param tvId             TV的ID
+ *  @param urls             图片url数组（建议一次传三张），电视默认显示数组的第一张图片，第二和第三张为电视端预加载，以提高电视端图片显示速度
+ *  @param tvId             电视的ID
  */
 - (void)tvPlayImageUrls:(NSArray<NSURL *> *)urls tvId:(NSString *)tvId;
 
 /**
- *  TV端缩放显示
+ *  电视端缩放显示
  *
  *  @param rect             rect为图片或者文件显示的相对位置和大小
- *  @param tvId             TV的ID
+ *  @param tvId             电视的ID
  */
 - (void)tvScaleRect:(CGRect)rect tvId:(NSString *)tvId;
 

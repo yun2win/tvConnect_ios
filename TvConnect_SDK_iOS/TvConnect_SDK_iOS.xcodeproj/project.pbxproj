@@ -17,7 +17,6 @@
 		F42996E41F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F42996E31F31CEF400FB3D24 /* TvConnect_SDK_iOSUITests.m */; };
 		F42997021F31CF4400FB3D24 /* CustomizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42996F21F31CF4400FB3D24 /* CustomizeViewController.m */; };
 		F42997031F31CF4400FB3D24 /* CustomizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42996F31F31CF4400FB3D24 /* CustomizeViewController.xib */; };
-		F42997041F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F51F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework */; };
 		F42997061F31CF4400FB3D24 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996F91F31CF4400FB3D24 /* line@2x.png */; };
 		F42997071F31CF4400FB3D24 /* pick_bg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996FA1F31CF4400FB3D24 /* pick_bg2@2x.png */; };
 		F42997081F31CF4400FB3D24 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996FB1F31CF4400FB3D24 /* pick_bg@2x.png */; };
@@ -26,9 +25,10 @@
 		F429970B1F31CF4400FB3D24 /* 返回2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996FE1F31CF4400FB3D24 /* 返回2@2x.png */; };
 		F429970C1F31CF4400FB3D24 /* 返回2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F42996FF1F31CF4400FB3D24 /* 返回2@3x.png */; };
 		F429970D1F31CF4400FB3D24 /* ScanQRcode.m in Sources */ = {isa = PBXBuildFile; fileRef = F42997011F31CF4400FB3D24 /* ScanQRcode.m */; };
-		F429970F1F31CF6100FB3D24 /* Y2W_ConnetcionTV_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F51F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F42997101F31CF6100FB3D24 /* Y2W_IM_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F61F31CF4400FB3D24 /* Y2W_IM_SDK.framework */; };
-		F42997111F31CF6100FB3D24 /* Y2W_IM_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F61F31CF4400FB3D24 /* Y2W_IM_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F455460F1F32F35000627B49 /* Y2W_IM_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F61F31CF4400FB3D24 /* Y2W_IM_SDK.framework */; };
+		F45546101F32F39800627B49 /* Y2W_ConnetcionTV_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F51F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework */; };
+		F45546111F32F39800627B49 /* Y2W_ConnetcionTV_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F51F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F45546131F32F39800627B49 /* Y2W_IM_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F42996F61F31CF4400FB3D24 /* Y2W_IM_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,14 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F42997121F31CF6200FB3D24 /* Embed Frameworks */ = {
+		F45546141F32F39800627B49 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F42997111F31CF6100FB3D24 /* Y2W_IM_SDK.framework in Embed Frameworks */,
-				F429970F1F31CF6100FB3D24 /* Y2W_ConnetcionTV_SDK.framework in Embed Frameworks */,
+				F45546131F32F39800627B49 /* Y2W_IM_SDK.framework in Embed Frameworks */,
+				F45546111F32F39800627B49 /* Y2W_ConnetcionTV_SDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,8 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42997101F31CF6100FB3D24 /* Y2W_IM_SDK.framework in Frameworks */,
-				F42997041F31CF4400FB3D24 /* Y2W_ConnetcionTV_SDK.framework in Frameworks */,
+				F45546101F32F39800627B49 /* Y2W_ConnetcionTV_SDK.framework in Frameworks */,
+				F455460F1F32F35000627B49 /* Y2W_IM_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +233,7 @@
 				F42996B71F31CEF400FB3D24 /* Sources */,
 				F42996B81F31CEF400FB3D24 /* Frameworks */,
 				F42996B91F31CEF400FB3D24 /* Resources */,
-				F42997121F31CF6200FB3D24 /* Embed Frameworks */,
+				F45546141F32F39800627B49 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -624,6 +624,7 @@
 				F42996EA1F31CEF500FB3D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F42996EB1F31CEF500FB3D24 /* Build configuration list for PBXNativeTarget "TvConnect_SDK_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -632,6 +633,7 @@
 				F42996ED1F31CEF500FB3D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F42996EE1F31CEF500FB3D24 /* Build configuration list for PBXNativeTarget "TvConnect_SDK_iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -640,6 +642,7 @@
 				F42996F01F31CEF500FB3D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

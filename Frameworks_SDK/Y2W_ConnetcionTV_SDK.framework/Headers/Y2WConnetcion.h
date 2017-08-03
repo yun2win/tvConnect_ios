@@ -17,9 +17,9 @@
  *
  *  @param appKey           appKey
  *  @param appSecret        appSecret
- *  @param uid              IM通信的唯一标识
- *  @param userName         用户名
- *  @param userAvatarUrl    用户头像
+ *  @param uid              uid应保持唯一(如果传@""或nil，sdk会自动使用当前时间戳)
+ *  @param userName         用户名（用于在电视端显示）
+ *  @param userAvatarUrl    用户头像（用于在电视端显示）
  *  @param result           返回的结果 error == nil 表示操作成功
  */
 - (instancetype)initWithAppkey:(NSString *)appKey appSecret:(NSString *)appSecret uid:(NSString *)uid userName:(NSString *)userName userAvatarUrl:(NSString *)userAvatarUrl result:(void (^)(NSError *error))result;
@@ -64,10 +64,10 @@
 - (void)deleteTv:(NSString *)tvId;
 
 /**
- *  PDF文件投屏到电视
+ *  PDF文件投屏到电视  （需先连接IM通讯服务）
  *
  *  @param url              文件的URL
- *  @param position         当前要显示第几页
+ *  @param position         当前要显示第几页(文档翻页时,改变此参数即可)
  *  @param totalPageNum     pdf文档总页数
  *  @param fileName         文件名
  *  @param tvId             电视的ID
@@ -75,7 +75,7 @@
 - (void)tvPlayPDFUrl:(NSURL *)url position:(NSInteger)position totalPageNum:(NSInteger)totalPageNum fileName:(NSString *)fileName tvId:(NSString *)tvId;
 
 /**
- *  图片投屏到电视
+ *  图片投屏到电视 （需先连接IM通讯服务）
  *
  *  @param urls             图片url数组（建议一次传三张），电视默认显示数组的第一张图片，第二和第三张为电视端预加载，以提高电视端图片显示速度
  *  @param tvId             电视的ID
@@ -83,7 +83,7 @@
 - (void)tvPlayImageUrls:(NSArray<NSURL *> *)urls tvId:(NSString *)tvId;
 
 /**
- *  电视端缩放显示
+ *  电视端局部缩放 （需先连接IM通讯服务）
  *
  *  @param rect             rect为图片或者文件显示的相对位置和大小
  *  @param tvId             电视的ID

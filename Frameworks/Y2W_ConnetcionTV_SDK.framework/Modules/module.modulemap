@@ -1,0 +1,6 @@
+framework module Y2W_ConnetcionTV_SDK {
+  umbrella header "Y2W_ConnetcionTV_SDK.h"
+
+  export *
+  module * { export * }
+}

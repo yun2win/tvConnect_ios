@@ -67,7 +67,7 @@
  *  PDF文件投屏到电视  （需先连接IM通讯服务）
  *
  *  @param url              文件的URL
- *  @param position         当前要显示第几页(文档翻页时,改变此参数即可)
+ *  @param position         当前要显示第几页, 从1开始(文档翻页时,改变此参数即可)
  *  @param totalPageNum     pdf文档总页数
  *  @param fileName         文件名
  *  @param tvId             电视的ID

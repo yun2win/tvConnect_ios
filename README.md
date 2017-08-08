@@ -14,7 +14,7 @@
 <li>图片及PDF投屏后局部缩放功能</li>
 </ol>
 
-详细介绍请查看帮助文档：http://www.yun2win.com
+详细介绍请查看帮助文档：http://api.yun2win.com/docs/iOS/Y2W_ConnetcionTV_SDK/index.html
 
 ## 注意事项
 由于Y2W_IM_SDK.framework只能运行在真机上，所以此工程只能在真机上运行

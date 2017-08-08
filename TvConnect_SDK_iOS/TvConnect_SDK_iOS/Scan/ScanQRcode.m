@@ -21,7 +21,6 @@
 
 - (void)dealloc {
     [self invalidateTimer];
-
 }
 
 - (void)invalidateTimer {
@@ -29,15 +28,12 @@
     timer = nil;
 }
 
-- (BOOL)hidesBottomBarWhenPushed {
-    return YES;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
     self.title = @"扫一扫";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"返回2"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+    
     
     UIButton * scanButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [scanButton setTitle:@"取消" forState:UIControlStateNormal];

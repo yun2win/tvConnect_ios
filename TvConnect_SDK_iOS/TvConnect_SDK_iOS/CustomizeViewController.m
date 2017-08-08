@@ -72,7 +72,9 @@
             [array addObject:url];
         }
         
-        [self.connetcion tvPlayImageUrls:[array copy] tvId:model.ID];
+        [self.connetcion tvPlayImageUrls:[array copy] tvId:model.ID result:^(Y2WConnetcionReturnInfo returnInfo) {
+            
+        }];
     }
 }
 
@@ -96,7 +98,8 @@
         }];
     }];
     
-    [self presentViewController:scanVc animated:YES completion:nil];
+    UINavigationController *navScanVc = [[UINavigationController alloc] initWithRootViewController:scanVc];
+    [self presentViewController:navScanVc animated:YES completion:nil];
 }
 
 @end

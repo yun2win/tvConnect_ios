@@ -10,6 +10,13 @@
 #import <UIKit/UIKit.h>
 @class Y2WTVModel;
 
+typedef NS_ENUM(NSInteger, Y2WConnetcionReturnInfo) {
+    Y2WConnetcionReturnInfoWait,                //待等TV接受
+    Y2WConnetcionReturnInfoSuccess,             //操作成功
+    Y2WConnetcionReturnInfoBusy,                //tv忙
+    Y2WConnetcionReturnInfoReject               //tv拒接
+};
+
 @interface Y2WConnetcion : NSObject
 
 /**
@@ -71,23 +78,26 @@
  *  @param totalPageNum     pdf文档总页数
  *  @param fileName         文件名
  *  @param tvId             电视的ID
+ *  @param result           returnInfo 电视端返回的信息
  */
-- (void)tvPlayPDFUrl:(NSURL *)url position:(NSInteger)position totalPageNum:(NSInteger)totalPageNum fileName:(NSString *)fileName tvId:(NSString *)tvId;
+- (void)tvPlayPDFUrl:(NSURL *)url position:(NSInteger)position totalPageNum:(NSInteger)totalPageNum fileName:(NSString *)fileName tvId:(NSString *)tvId result:(void (^)(Y2WConnetcionReturnInfo returnInfo))result;
 
 /**
  *  图片投屏到电视 （需先连接IM通讯服务）
  *
  *  @param urls             图片url数组（建议一次传三张），电视默认显示数组的第一张图片，第二和第三张为电视端预加载，以提高电视端图片显示速度
  *  @param tvId             电视的ID
+ *  @param result           returnInfo 电视端返回的信息
  */
-- (void)tvPlayImageUrls:(NSArray<NSURL *> *)urls tvId:(NSString *)tvId;
+- (void)tvPlayImageUrls:(NSArray<NSURL *> *)urls tvId:(NSString *)tvId result:(void (^)(Y2WConnetcionReturnInfo returnInfo))result;
 
 /**
  *  电视端局部缩放 （需先连接IM通讯服务）
  *
  *  @param rect             rect为图片或者文件显示的相对位置和大小
  *  @param tvId             电视的ID
+ *  @param result           returnInfo 电视端返回的信息
  */
-- (void)tvScaleRect:(CGRect)rect tvId:(NSString *)tvId;
+- (void)tvScaleRect:(CGRect)rect tvId:(NSString *)tvId result:(void (^)(Y2WConnetcionReturnInfo returnInfo))result;
 
 @end

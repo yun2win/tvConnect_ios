@@ -14,7 +14,8 @@ typedef NS_ENUM(NSInteger, Y2WConnetcionReturnInfo) {
     Y2WConnetcionReturnInfoWait,                //待等TV接受
     Y2WConnetcionReturnInfoSuccess,             //操作成功
     Y2WConnetcionReturnInfoBusy,                //tv忙
-    Y2WConnetcionReturnInfoReject               //tv拒接
+    Y2WConnetcionReturnInfoReject,              //tv拒接
+    Y2WConnetcionReturnInfoTimeOut              //超时
 };
 
 @interface Y2WConnetcion : NSObject
